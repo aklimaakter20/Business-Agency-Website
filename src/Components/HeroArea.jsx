@@ -10,7 +10,7 @@ const HeroArea = () => {
       <h1 className='text-2xl text-center lg:text-start w-full lg:text-5xl lg:w-[65%] font-bold py-10 px-10 mt-[60px] text-white leading-tight'>Find amazing things to do anytime, anywhere in Lagos.</h1>
 
 <div className='bg-[#FBFCFF] w-full h-auto lg:w-[750px] lg:h-[150px] px-5 py-5 lg:py-10 lg:px-10 lg:ms-10 rounded-xl'>
-    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3'>
+    <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-3'>
   <div>
   <Autocomplete labelPlacement='outside' label= "Location" placeholder='Oshodi' className='w-[100%]'>
     <AutocompleteItem value="Hablu programmer">Oshodi</AutocompleteItem>
