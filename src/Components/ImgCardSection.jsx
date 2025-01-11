@@ -24,7 +24,7 @@ function ImgCardSection() {
         {
             cards.map((card, index)=> (
                 <div key= {index} className='flex flex-col items-center overflow-hidden'>
-                    <img className='w-full h-[450px] lg:h-[500px]' src={card.imgSrc} alt="" />
+                    <img className='w-full h-[300px] lg:h-[450px]' src={card.imgSrc} alt="" />
                     <div>
                         <h2 className='text-2xl sm:text-3xl mt-4 mb-10 text-[#26395C] font-bold'>{card.title}</h2>
                     </div>
