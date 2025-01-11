@@ -3,9 +3,10 @@ import { Autocomplete, AutocompleteItem, Button } from "@nextui-org/react";
 
 const HeroArea = () => {
   return (
-    <section className="bg-[url('/hero.png')] w-full bg-no-repeat bg-cover h-[100vh] overflow-hidden mx-auto -mt-20">
+    <section className="bg-[url('/hero.png')] w-full bg-no-repeat bg-cover h-[140vh] mx-auto -mt-44 mb-10">
+      
       <div className="container w-[80%] mt-10 mx-auto">
-        <h1 className="text-2xl text-center lg:text-start w-full lg:text-5xl lg:w-[65%] font-bold py-10 px-10 mt-[60px] text-white leading-tight">
+        <h1 className="text-2xl text-center lg:text-start w-full lg:text-5xl lg:w-[65%] font-bold py-10 px-10 mt-24 text-white leading-tight">
           Find amazing things to do anytime, anywhere in Lagos.
         </h1>
 

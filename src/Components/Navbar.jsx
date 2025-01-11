@@ -34,7 +34,7 @@ function MyNavbar() {
     "Contact",
   ];
   return (
-    <section>
+    <section className="mb-48 py-3">
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
