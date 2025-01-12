@@ -2,6 +2,8 @@
 import './App.css'
 import Carousel from './Components/Carousel'
 import ChillsBay from './Components/ChillsBay'
+import Footer from './Components/Footer'
+import Galary from './Components/Galary'
 import HeroArea from './Components/HeroArea'
 import ImgCardSection from './Components/ImgCardSection'
 import Navbar from './Components/Navbar'
@@ -17,6 +19,8 @@ function App() {
   <ThingsToDo/>
   <ChillsBay/>
   <Carousel/>
+  <Galary/>
+  <Footer/>
     </>
   )
 }
