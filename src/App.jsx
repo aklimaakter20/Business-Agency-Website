@@ -1,26 +1,35 @@
-
 import './App.css'
-import Carousel from './Components/Carousel'
-import ChillsBay from './Components/ChillsBay'
+import MyNavbar from './Components/MyNavbar'
+import HomePage from './Components/HomePage'
 import Footer from './Components/Footer'
-import Galary from './Components/Galary'
-import HeroArea from './Components/HeroArea'
-import ImgCardSection from './Components/ImgCardSection'
-import Navbar from './Components/Navbar'
-import ThingsToDo from './Components/ThingsCard'
+import DrinkPage from './Components/DrinkPage/DrinkPage'
+import ClubPage from './Components/ClubPage/Club'
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
 
   return (
     <>
-  <Navbar/>
-  <HeroArea/>
-  <ImgCardSection/>
-  <ThingsToDo/>
-  <ChillsBay/>
-  <Carousel/>
-  <Galary/>
-  <Footer/>
+    <Router>
+      <MyNavbar/>
+
+      <Routes>
+      <Route path= '/' element={<HomePage />}></Route>
+      <Route path= '/drink' element={<DrinkPage />}></Route>
+      <Route path= '/club' element={<ClubPage />}></Route>
+
+      </Routes>
+      <Footer/>
+       
+ 
+   </Router>
+
+
+ 
+ 
+
     </>
   )
 }

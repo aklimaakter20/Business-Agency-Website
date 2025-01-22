@@ -1,5 +1,5 @@
 import React from "react";
-import { Autocomplete, AutocompleteItem, Button } from "@nextui-org/react";
+import { Autocomplete, AutocompleteItem, Button } from "@heroui/react";
 
 const HeroArea = () => {
   return (

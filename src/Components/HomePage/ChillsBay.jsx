@@ -2,17 +2,19 @@ import React from 'react'
 
 function ChillsBay() {
     const CardInfo = [
-        {
+        {   id: 1,
             logo: "/logo1.png",
             title: "Your  entire  trip in one checkout!",
             des: "Add multiple experiences to your  cart and checkout on one click."
         },
         {
+            id: 2,
             logo: "/logo2.png",
             title: "Pay with Crypto on the go",
             des: "Enjoy the freedom of universal payments for a seamless marketplace experience"
         },
         {
+            id: 3,
             logo: "/logo3.png",
             title: "Free Cancellation and ticket transfer",
             des: "Add multiple experiences to your cart and checkout on one click."

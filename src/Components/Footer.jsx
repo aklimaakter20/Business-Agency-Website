@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from '../../public/logo.png'
-import { Button } from '@nextui-org/button'
+import Logo from '/logo.png'
+import { Button } from "@heroui/button"
 
     const footerData = {
         socialIcons: [
@@ -82,7 +82,7 @@ function Footer() {
                         ))}
                               <div className='w-full bg-[#F5FAFF] p-5'>
                     <img src={PartnerSection.image} alt="" />
-                    <h3 className='text-2xl text-[#26395c] font-bold py-2'>{PartnerSection.title}</h3>
+                    <h3 className='text-3xl text-[#26395c] font-bold py-2'>{PartnerSection.title}</h3>
                     <p className='text-sm text-gray-400'>{PartnerSection.des}</p>
                     <Button color='primary' className='w-full mt-4' size='xl'>Join Now</Button>
                 </div>

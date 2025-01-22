@@ -1,29 +1,20 @@
 import React, { useState } from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarMenuItem,
-  NavbarMenuToggle,
-  NavbarItem,
-  Link,
-  NavbarMenu,
-} from "@nextui-org/react";
-import {
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownItem,
-  Button,
-} from "@nextui-org/react";
+import { Navbar,NavbarBrand,NavbarContent,NavbarMenuItem,NavbarMenuToggle,NavbarItem,Link,NavbarMenu} from "@heroui/react";
+import {Dropdown,DropdownTrigger,DropdownMenu,DropdownItem,Button} from "@heroui/react";
+import { FaChevronDown } from "react-icons/fa";
+// import { FaRegUser } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import Logo from "/logo.png";
+import ShopCart from '/shop-cart.png'
+import MyModal from "./HomePage/Modal";
+import ProfileDropdown from "./HomePage/Dropdown";
+import HomePage from "./HomePage";
 
-import { ChevronDownIcon, UserIcon } from "@heroicons/react/24/outline";
-import Logo from "../assets/logo.png";
-import ShopCart from '../assets/shopcart.png'
-// import User from '../assets/User.png'
+
 
 
 function MyNavbar() {
+  const value = "Hello, Navbar!";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuitems = [
     "Eat & Drink",
@@ -53,20 +44,24 @@ function MyNavbar() {
         {/* Desktop Device */}
         <NavbarContent className="hidden sm:flex gap-4 w-full justify-center">
           <NavbarBrand>
-            <img className="w-44" src={Logo} alt="" />
+            <NavLink to= '/'><img className="w-44" src={Logo} alt="" /></NavLink>
           </NavbarBrand>
           <NavbarItem>
-            <Link className="text-black">Eat & Drink</Link>
+            <NavLink to='/drink' style={({isActive}) => ({
+              color: isActive ? "#0E8BFF" : "black",
+            })}>Eat & Drink</NavLink>
           </NavbarItem>
           <NavbarItem>
-            <Link className="foreground">
-              Club <sup className="bg-blue-600 text-[8px]">+Hot</sup>
-            </Link>
+           <NavLink to='club' style={({isActive})=> ({
+            color: isActive ? "#0E8BFF" : "black"
+           })}>Club <sup className="bg-blue-400 px-2 text-[8px]">+Hot</sup>
+           </NavLink>
+       
           </NavbarItem>
           <NavbarItem>
             <Dropdown>
               <DropdownTrigger>
-                <Button variant="none">Things to Do<ChevronDownIcon className="text-blue-500 w-4 h-4"/></Button>
+                <Button variant="none">Things to Do<FaChevronDown className="text-blue-500 w-4 h-4"/></Button>
               </DropdownTrigger>
               <DropdownMenu aria-label="Static Actions">
                 <DropdownItem key="new">New file</DropdownItem>
@@ -88,17 +83,11 @@ function MyNavbar() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Dropdown>
-              <DropdownTrigger>
-                <Button variant="none"><UserIcon className="text-gray-500 h-4 w-4"/>Account<ChevronDownIcon className="text-blue-500 w-4 h-4"/></Button>
-              </DropdownTrigger>
-              <DropdownMenu aria-label="profile">
-                <DropdownItem key="new">New file</DropdownItem>
-                <DropdownItem key="copy">Copy link</DropdownItem>
-                <DropdownItem key="edit">Edit file</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
+            
+          {value === true ? <MyModal/> : <ProfileDropdown/>}
+            
           </NavbarItem>
+      
           <NavbarItem>
             <Button color="primary">Contact Now</Button>
           </NavbarItem>

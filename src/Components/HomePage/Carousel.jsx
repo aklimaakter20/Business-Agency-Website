@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 // import {FaArrowLeft,FaArrowRight} from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 function Carousel() {
 
 const CarouselData = [
@@ -13,13 +13,13 @@ const CarouselData = [
         des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
     },
     {
-        id: 1,
+        id: 2,
         image: "/slider.png",
         heading: "GTCO Food and Drink Festival 2022: Africa’s Biggest Food and Drink Festival",
         des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
     },
     {
-        id: 1,
+        id: 3,
         image: "/slider.png",
         heading: "The 90s with Dj Neptune",
         des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
@@ -28,22 +28,22 @@ const CarouselData = [
 ];
 const TagData = [
     {
-        id: 1,
+        id: 10,
         img: "Calendar.png",
         title: "Dec 12 2024",
     },
     {
-        id: 2,
+        id: 11,
         img: "Mark.png",
         title: "TBS Lagos",
     },
     {
-        id: 3,
+        id: 12,
         img: "Clock.png",
         title: "9:00",
     },
     {
-        id: 4,
+        id: 13,
         img: "Tag.png",
         title: "N20,000",
     }
@@ -120,7 +120,7 @@ const handleNext = () => {
             </div>
             <div className='flex items-center justify-center gap-2 mt-6'>
                 {
-                    CarouselData.map((_, index)=> (
+                    CarouselData.map((data, index)=> (
                         <button onClick={()=> handleDotClick(index)} className={`w-3 h-4 rounded-full ${
                             index === currentIndex
                             ? "bg-blue-500"
