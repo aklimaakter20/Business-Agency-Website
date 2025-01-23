@@ -13,7 +13,7 @@ function FindPlaces() {
       <div className="container bg-[#FBFCFF] w-full h-auto lg:w-[90%] lg:h-[150px] px-5 lg:px-10 lg:ms-10 rounded-xl">
       <h2 className="text-2xl md:text-3xl font-bold text-[#26395C] mb-8">Find the best places to eat and drink for any occasion</h2> 
 
-        <div className="grid sm:grid-cols-3 lg:grid-cols-6 gap-10">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
           <div>
             <Autocomplete
               labelPlacement="outside"
@@ -39,7 +39,7 @@ function FindPlaces() {
               className="max-w-[284px]"
               label="Date"
             />
-            ;
+        
           </div>
           <div>
             <DatePicker
