@@ -9,6 +9,7 @@ import ShopCart from '/shop-cart.png'
 import MyModal from "./HomePage/Modal";
 import ProfileDropdown from "./HomePage/Dropdown";
 import HomePage from "./HomePage";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 
@@ -79,7 +80,11 @@ function MyNavbar() {
           </NavbarItem>
           <NavbarItem>
             <Link className="foreground">
-            <img src={ShopCart} alt="" />
+            <NavLink to="/cart" style={({isActive}) => ({
+              color: isActive ? "#0E8BFF" : "black",
+            })}>
+            <FaShoppingCart  className="text-xl"/>
+            </NavLink>
             </Link>
           </NavbarItem>
           <NavbarItem>

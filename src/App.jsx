@@ -6,6 +6,7 @@ import DrinkPage from './Components/DrinkPage/DrinkPage'
 import ClubPage from './Components/ClubPage/Club'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MyPayment from './Components/PaymentPage/MyPayment'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path= '/' element={<HomePage />}></Route>
       <Route path= '/drink' element={<DrinkPage />}></Route>
       <Route path= '/club' element={<ClubPage />}></Route>
+      <Route path= '/cart' element={<MyPayment />}></Route>
 
       </Routes>
       <Footer/>
