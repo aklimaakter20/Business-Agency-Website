@@ -1,15 +1,17 @@
 import React from 'react'
 import DrinkHero from './DrinkHero'
 import FindPlaces from './FindPlaces'
-import Restuarants from './Restuarants'
+import RestaurantsCard from '../Common/RestaurantsCard'
 import DrinkCarousel from './DrinkCarousel'
 const DrinkPage = () => {
   return (
   <>
     <DrinkHero/>
     <FindPlaces/>
-    <Restuarants/>
+    <RestaurantsCard title= "Popular Restaurants in Lagos"/>
     <DrinkCarousel/>
+    <RestaurantsCard title= "Restaurants nearby"/>
+
     </>
   )
 }

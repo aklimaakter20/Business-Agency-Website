@@ -1,7 +1,7 @@
 import React,{ useState, useEffect} from 'react'
 import { Button } from "@heroui/react";
 
-function Restuarants() {
+function RestaurantsCard({title}) {
     const [data, setData ] = useState([]);
 
     useEffect(()=> {
@@ -19,7 +19,7 @@ function Restuarants() {
     <section className='bg-[#F5FAFF] p-10'>
         <div className='w-[80%] mx-auto'>
             <div className='flex justify-between items-center'>
-                <h2 className='font-bold text-2xl md:text-4xl mb-4 mt-4 text-[#26395C]'>Popular Restuarants in Lagos</h2>
+                <h2 className='font-bold text-2xl md:text-4xl mb-4 mt-4 text-[#26395C]'>{title}</h2>
                 <Button variant='outline' className='text-[#0E8BFF] text-xl'>See More</Button>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5'>
@@ -42,4 +42,4 @@ function Restuarants() {
   )
 }
 
-export default Restuarants
+export default RestaurantsCard
