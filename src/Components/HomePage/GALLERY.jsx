@@ -8,7 +8,7 @@ function GALLERY() {
     },
     {
       id: 2,
-      img: "g.png",
+      img: "g2.png",
     },
     {
       id: 3,
