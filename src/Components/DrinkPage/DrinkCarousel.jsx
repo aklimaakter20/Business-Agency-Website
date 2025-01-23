@@ -15,7 +15,7 @@ const CarouselData = [
     },
     {
         id: 2,
-        image: "/dSlider.png",
+        image: "/slider.png",
         heading: "GTCO Food and Drink Festival 2022: Africa’s Biggest Food and Drink Festival",
         des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
     },
