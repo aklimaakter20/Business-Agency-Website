@@ -1,10 +1,12 @@
 import React from 'react'
-
+import DrinkHero from './DrinkHero'
+import FindPlaces from './FindPlaces'
 const DrinkPage = () => {
   return (
-    <div>
-      <h1>this is a drink page</h1>
-    </div>
+  <>
+    <DrinkHero/>
+    <FindPlaces/>
+    </>
   )
 }
 
