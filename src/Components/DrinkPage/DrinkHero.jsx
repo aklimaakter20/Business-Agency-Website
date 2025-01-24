@@ -4,7 +4,7 @@ import { Button } from "@heroui/react";
 function DrinkHero() {
   return (
     
-    <section className='bg-[url("dHero.png")] w-full h-[95vh] bg-no-repeat bg-top md:bg-cover overflow-hidden mx-auto'>
+    <section className='bg-[url("/dHero.png")] w-full h-[95vh] bg-no-repeat bg-top md:bg-cover overflow-hidden mx-auto'>
      <div className="flex flex-col justify-start items-center lg:items-start lg:py-[100px] p-5 pt-10 w-[80%] mx-auto">
      <div className="bg-[#FBFCFF] container w-full max-w-[330px] md:max-w-[600px] rounded-lg p-[18px] md:py-[20px] md:px-8">
         <h1 className="text-2xl md:text-4xl font-bold pb-3.5 lg:pb-6 text-[#26395C]">Our top pick for the week!</h1>
