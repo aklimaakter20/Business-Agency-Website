@@ -13,7 +13,6 @@ import { FaShoppingCart } from "react-icons/fa";
 
 
 
-
 function MyNavbar() {
   const value = "Hello, Navbar!";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,7 +93,7 @@ function MyNavbar() {
           </NavbarItem>
       
           <NavbarItem>
-            <Button color="primary">Contact Now</Button>
+          <NavLink to='contact'> <button className="bg-blue-600 px-4 py-2 rounded-lg text-white font-semibold">Contact Now</button></NavLink>           
           </NavbarItem>
         </NavbarContent>
 
