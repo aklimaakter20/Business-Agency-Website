@@ -7,6 +7,26 @@ import {Textarea} from "@heroui/react";
 import {Button} from "@heroui/react";
 
 function Contact() {
+  const Items = [
+    {
+      img: "Influencer.png",
+      heading : "Become an Influencer",
+      description: "Join a company that’s passionate about design and technology",
+      website: "chills@chillsbay.com"
+    },
+    {
+      img: "Help.png",
+      heading : "Need Help?",
+      description: "Questions about using  Market? Our support team is here to help.",
+      website: "chills@chillsbay.com"
+    },
+    {
+      img: "refund.png",
+      heading : "Refunds & Others",
+      description: "Join a company that’s passionate about design and technology",
+      website: "chills@chillsbay.com"
+    },
+  ]
   return (
     <section>
       <div className="lg:w-[80%] mx-auto py-16 ">
@@ -86,6 +106,23 @@ function Contact() {
               </div>
             </form>
           </div>
+        </div>
+        <div className="mt-24 mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-3  gap-3">
+            {
+              Items.map((item,index)=>(
+                <div key={index} className="text-center justify-center items-center">
+                  <img className="w-20 h-20 object-cover rounded mb-8 mx-auto" src={item.img} alt="" />
+                  <h3 className="text-xl font-bold mb-2 text-[#26395C]">{item.heading}</h3>
+                  <p className="text-[#656B89] w-[80%] mb-2 mx-auto text-sm">{item.description}</p>
+                  <a className="text-primary hover:underline cursor-pointer text-xs">{item.website}</a>
+
+                </div>
+              ))
+            }
+
+          </div>
+
         </div>
       </div>
     </section>
